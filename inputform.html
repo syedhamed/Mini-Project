@@ -1,0 +1,69 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\Syedh\OneDrive\Desktop\Project Games\Gamesproject\Gamespage\Numbergusser\inputform.css"> <!-- Add your CSS file here -->
+</head>
+<body>
+    <h1>Contact Us</h1>
+
+    <form id="contactForm" action="#" onsubmit="return validateForm()">
+        <label for="purpose">Purpose of Contact:</label>
+        <select id="purpose" name="purpose">
+            <option value="new-game-request">New Game Request</option>
+            <option value="report-bug">Report a Bug</option>
+        </select>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Name can only contain alphabets and spaces">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="thankYou" style="display: none;">
+        <p>Thank you, <span id="userName"></span>! Your request has been received.</p>
+    </div>
+
+    <script>
+        function validateForm() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+
+            // Validate name (only alphabets and spaces)
+            if (!/^[A-Za-z\s]+$/.test(name)) {
+                alert("Name can only contain alphabets and spaces.");
+                return false;
+            }
+
+            // Validate email format
+            if (!validateEmail(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // Form is valid, hide the form and show the thank you message
+            document.getElementById("contactForm").style.display = "none";
+            document.getElementById("thankYou").style.display = "block";
+            document.getElementById("userName").textContent = name;
+
+            return false; // Prevent form submission
+        }
+
+        function validateEmail(email) {
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(email);
+        }
+    </script>
+</body>
+</html>
+
+</body>
+</html>
