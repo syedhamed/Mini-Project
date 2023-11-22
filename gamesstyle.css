@@ -1,0 +1,66 @@
+/* Add your main page styles here */
+header {
+  
+
+}
+h1{
+  position:absolute;
+  top: 30px;
+  right: 450px;
+  font-weight: bold;
+  color: brown;
+
+
+}
+body{
+  color: rgba(226, 43, 122, 0.837);
+  background-color: rgb(249, 124, 228);
+}
+.games-background{
+  z-index: 100;
+  position: relative;
+
+  color: rgba(226, 43, 122, 0.837);
+
+
+
+
+}
+.games-container{
+  position: absolute;
+  top: 300px;
+  right: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 100px;
+
+}
+.img{
+  width: 100%;
+  height:100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+
+.rps{
+  height: 200px;
+  width: 200px;
+  z-index: 500;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+
+  font-weight: bold;
+
+ 
+}
+.rps-img{
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  
+}
