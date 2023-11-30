@@ -1,0 +1,97 @@
+/* Global styling for the entire page */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://s3.amazonaws.com/mindgames.ca/wp-content/uploads/2023/02/72628-1.jpg') center/cover;
+    background-attachment: fixed; /* Fixed background scrolling effect */
+}
+
+/* Styling for the main container */
+.container {
+    text-align: center;
+}
+
+/* Styling for the game wrapper */
+.wrapper {
+    background-color: #d2b48c; /* SaddleBrown */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the title of the game */
+h1 {
+    color: #8b4513; /* SaddleBrown */
+    font-size: 4em; /* font size  */
+    font-family: 'Georgia', serif; /* font family */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* text shadow*/
+    letter-spacing: 2px; /* Increase letter spacing for style */
+    margin-bottom: 20px;
+}
+
+
+/* Styling for the game board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /*  column size */
+    grid-gap: 20px; /*  grid gap  */
+    margin: 20px 0;
+}
+
+/* Styling for individual cells in the game board */
+.cell {
+    width: 100px; /* width */
+    height: 100px; /*  height  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px; /* font size */
+    border: 5px solid #8b4513; /* Thicker border - color */
+    cursor: pointer;
+    background-color: #deb887; /* BurlyWood - color*/
+    color: #fff; /* White */
+    text-shadow: 2px 2px 2px #8b4513; /* Add a white shadow for thickness */
+}
+
+/* Hover effect for cells */
+.cell:hover {
+    background-color: #d2b48c; /* Tan - color */
+}
+
+/* Styling for the game status display */
+.status {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #8b4513; /* SaddleBrown - color*/
+}
+
+/* Styling for the reset button */
+.reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4a98f7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the reset button */
+.reset:hover {
+    background-color: #3569b5;
+}
+
+/* Updated styles for winning cells */
+.winning-cell {
+    border: 5px solid #3c00ff; /* Increase border size */
+    background-color: #ffd700; /* Gold background color */
+}
+
+
+
