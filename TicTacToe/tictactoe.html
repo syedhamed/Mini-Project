@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Metadata for character set, compatibility, and viewport -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title of the page -->
+  <title>Tic Tac Toe</title>
+  <!-- Link to the external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="tictactoe.css">
+</head>
+
+<body>
+  <!-- Main container for the game -->
+  <div class="container">
+    <!-- Game wrapper containing the title, symbol prompt, board, status, and reset button -->
+    <div class="wrapper">
+      <!-- Title of the game -->
+      <h1>Tic Tac Toe</h1>
+      
+      <!-- Symbol prompt for Player A to choose X or O -->
+      <div class="symbol-prompt">
+        <p>Player A, choose X or O:</p>
+        <button>X</button>
+        <button>O</button>
+      </div>
+      
+      <!-- Game board with cells -->
+      <div class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+      </div>
+      
+      <!-- Status display for game messages -->
+      <div class="status"></div>
+      
+      <!-- Reset button to restart the game -->
+      <button class="reset">Reset</button>
+    </div>
+  </div>
+
+  <!-- JavaScript file for game logic -->
+  <script src="tictactoe.js" defer></script>
+</body>
+
+</html>
