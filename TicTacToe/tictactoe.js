@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // Highlight the winning cells by adding a class
                 const winningPattern = winPatterns.find(pattern => board[pattern[0]] === board[pattern[1]] && board[pattern[1]] === board[pattern[2]]);
-                console.log(winningPattern);
                 winningPattern.forEach(index => cells[index].classList.add('winning-cell'));
             }
         } else {
@@ -83,6 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Function to handle a reset button click
     const handleResetClick = () => {
+        console.log("Before reset:", currentPlayer, playerA, playerB, board);
         // Check if Player A has chosen a symbol
         if (!playerA) {
             alert("Player A must choose a symbol first!"); // Alert if Player A hasn't chosen a symbol
@@ -90,13 +90,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     
         // Reset game state
-        currentPlayer = playerA || "X";
         playerA = "";
         playerB = "";
         board = ["", "", "", "", "", "", "", "", ""];
         
         // Clear the content of all cells in the display
-        cells.forEach((cell) => (cell.textContent = ""));
+        cells.forEach((cell) => {
+            cell.textContent = "";
+            cell.classList.remove('winning-cell'); // Remove the winning-cell class
+        });
+
+        // Set the initial player to Player A after the reset
+        currentPlayer = playerA;
     
         // Update the status to indicate the current player
         status.textContent = `Current player: ${currentPlayer === playerA ? "Player A (" + playerA + ")" : "Player B (" + playerB + ")"}`;
