@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Function to handle a reset button click
     const handleResetClick = () => {
-        console.log("Before reset:", currentPlayer, playerA, playerB, board);
         // Check if Player A has chosen a symbol
         if (!playerA) {
             alert("Player A must choose a symbol first!"); // Alert if Player A hasn't chosen a symbol
