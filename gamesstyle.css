@@ -1,14 +1,20 @@
 /* Add your main page styles here */
 header {
   
+  
+
+
 
 }
+
 h1{
   position:absolute;
   top: 30px;
-  right: 450px;
+  right: 550px;
+  font-size: 5em;
   font-weight: bold;
   color: brown;
+  
 
 
 }
