@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const status = document.querySelector(".status"); // Get the element with the class "status"
     const resetButton = document.querySelector(".reset"); // Get the element with the class "reset"
     const symbolPrompt = document.querySelector(".symbol-prompt"); // Get the element with the class "symbol-prompt"
+    const instructionBtn = document.querySelector(".instruction-btn"); // Get the element with the class "instruction-btn"
+    const modal = document.querySelector(".modal"); // Get the element with the class "modal"
+    const closeBtn = document.querySelector(".close"); // Get the element with the class "close"
 
     let currentPlayer = ""; // Current player's symbol (X or O)
     let playerA = ""; // Player A's symbol
@@ -159,4 +162,22 @@ document.addEventListener("DOMContentLoaded", () => {
     symbolButtons.forEach((button) => {
         button.addEventListener("click", () => handlePlayerSelection(button.textContent));
     });
+
+    // Show the modal when the "Instructions" button is clicked
+    instructionBtn.addEventListener("click", () => {
+        modal.style.display = "block";
+    });
+
+    // Close the modal when the close button is clicked
+    closeBtn.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    // Close the modal when clicking outside the modal content
+    window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
 });
+
