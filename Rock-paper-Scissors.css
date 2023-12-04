@@ -37,41 +37,33 @@ body{
     .score{
       margin-top: 60px;
     }
-    .title1{
-      background-color: wheat;
-      color: white;
-      padding: 10px;
-      display: grid;
-      z-index: 300;
-      position: relative;
-      top: -50px;
-      right: -800px;
-      border-radius: 10px;
-      
-      
-     }
+   
      
-     .title1  .instruction-container{
+     .instruction-container{
        width: 300px;
-       height: 200px;
+       height: 400px;
        background-color: grey;
        z-index: 300;
-       display: none;
+       display: flex;
        position: absolute;
-       bottom: -200px;
+       top: 60px;
+       right:100px;
        opacity: 0.6;
-       
+       box-shadow: 10px 10px 5px rgb(235, 232 ,232);
+       color: white;
        transition: display 2s;
      }
      
-     .title1:focus .instruction-container {
-       display: inline;
-      
-     }
        .header{
          font-size: 20px;
          font-weight: bold;
+         color: white;
+         width: 20px;
        }
      .description{
-       display: list-item;
+      margin-top: 30px;
+      
+       display: flex;
+       padding: 10px;
+       color: white;
      }

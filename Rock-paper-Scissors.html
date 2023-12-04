@@ -2,29 +2,27 @@
 <html>
   <head>
     <title>ROCK PAPER SCISSORS CSS1</title>
-<link rel="stylesheet"
-href="Rock-paper-Scissors.css">
+<link rel="stylesheet" href="Rock-paper-Scissors.css">
   </head>
   <body>
-   <p class="title"
-   >ROCK PAPER SCISSORS</p>
+   <p class="title">ROCK PAPER SCISSORS</p>
     <button
       onclick="
     playGame('ROCK');  
     "
-    class="move-button"><img src="Image2023-11-23.jpeg" class="move-icon"></button>
+    class="move-button"><img src="ROCK.jpeg" class="move-icon"></button>
     <button 
       onclick="
         playGame('PAPER');
           "
-          class="move-button"><img src="Image 20231123.jpeg" class="move-icon">
+          class="move-button"><img src="PAPER.jpeg" class="move-icon">
           
         </button>
       <button 
       onclick="
 playGame('SCISSORS');  
       "
-      class="move-button"> <img src="Image 2023-11-23.jpeg" class="move-icon"></button> 
+      class="move-button"> <img src="SCISSORS.jpeg" class="move-icon"></button> 
 
       <p class="js-result  result"></p>
       <p class="js-moves"></p>
@@ -43,12 +41,23 @@ playGame('SCISSORS');
 
     "class="reset-score">Reset Score</button>
 
-<button class="title1"> INSTRUCTION 
+
   <div class="instruction-container">
     <div class="header">Instructions</div>
     <div class="description">
-      This is Rockpaperscissors game and  following are the Instructions to play the game.
-      if 
+     This is Rockpaperscissors game and  following are the Instructions to play the game.<br>
+     The Basic Rules of RPS :<br>
+     Players deliver hand signals representing rock, paper, or scissors,
+     with the outcome determined by these three rules:<br>
+
+       Rock wins against scissors.<br>
+       The rock will beat scissors every time but will be beaten by paper.<br>
+       Scissors win against paper.<br>
+       Scissors are thrown in the same way as rock.<br>
+       Paper wins against rock.  <br>
+       Paper will beat rock but will be beaten by scissors in no time.
+
+       
     </div>
   </div>
   </button>
