@@ -8,10 +8,14 @@ const input = document.querySelector("input"),
 input.focus();
 
 let randomNum = Math.floor(Math.random() * 10);
-chance = 10;
+
+chance = 5;
 
 // Listen for the click event on the check button
-checkButton.addEventListener("click", () => {
+checkButton.addEventListener("click", playGame)
+
+function playGame()
+{
   // Decrement the chance variable on every click
   chance--;
   // Get the value from the input field
@@ -41,11 +45,14 @@ checkButton.addEventListener("click", () => {
   if (chance == 0) {
     //Update check button, disable input, and clear input value.
     // Update guessed number text and color to indicate user loss.
-    [checkButton.textContent, input.disabled, inputValue] = ["Replay", true, ""];
-    [guess.textContent, guess.style.color] = ["You lost the game", "#DE0611",randomNum];
- 
+    [checkButton.textContent, input.disabled, inputValue] = ["Replay", "true", ""];
+    [guess.innerHTML, guess.style.color,randomNum] = [`You lost the game the correct number is <strong style="font-size: 27px;">
+    "${randomNum}"</strong>`, "#DE0611","randomNum"];
+   
+   
+
   }
   if (chance < 0) {
     window.location.reload();
   }
-});
+};
