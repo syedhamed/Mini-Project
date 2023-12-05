@@ -1,5 +1,5 @@
 body{
-  background-color: black;
+  background-color: rgb(237, 231, 231);
   color :white;
   font-family: Arial;
 
@@ -75,3 +75,4 @@ body{
      .description{
        display: list-item;
      }
+     
