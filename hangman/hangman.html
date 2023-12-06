@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hangmanstyle.css">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <p><h3>HANGMAN</h3></p>
+    <div id="hangman-container">
+        <div id="word-display"></div>
+        <div id="guesses">Incorrect guesses: <span id="incorrect-guesses"></span></div>
+        <div id="hangman-image"></div>
+        <input type="text" id="guess-input" maxlength="1">
+        <button onclick="makeGuess()">Guess</button>
+        <button onclick="resetGame()">New Game</button>
+    </div>
+    <script src="hangman.js"></script>
+</body>
+</html>
