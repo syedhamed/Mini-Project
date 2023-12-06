@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(127, 255, 240);
+    background-color:rgb(185, 180, 180);
     display: flex;
     text-decoration: underline;
     justify-content: center;
@@ -11,7 +11,7 @@ body {
 }
 
 .login-container {
-    background-color:rgb(72, 253, 232);
+    background-color:rgb(150, 148, 148);
     border: 1px solid #ccc;
     border-radius:15px;
     padding: 50px;
@@ -41,7 +41,7 @@ input[type="password"] {
 
 
 button {
-    background-color: #333;
+    background-color: #262626;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -52,3 +52,56 @@ button {
 button:hover {
     background-color: #222;
 }
+.side-bar{
+    position: absolute;
+  top: 80px;
+    left:10px;
+    
+    height: 400px;
+    width: 100px;
+   padding: 50px;
+   z-index: 300;
+  
+   
+  
+  
+  }
+  .side-barcontent{
+    display:flex;
+    flex-direction: column;
+   width: 100px;
+   height: 150px;
+   justify-content: space-around;
+   margin-left: -25px;
+   z-index: 1;
+  }
+  .home{
+   padding: 5px;
+   justify-content: center;
+   text-align: center;
+   margin-right: 2px;
+   font-size: 20px;
+   background-color:rgb(101, 96, 96);
+   border-radius: 4px;
+   width: 60px;
+   height: 60px;
+  
+  
+  }
+  .home-icon,.login-icon ,.contact-icon{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+   margin-left: 2px;
+   margin-bottom: 12px;
+  
+   border-radius: 20px;
+  }
+  
+   .home a{
+    margin-left: -7px;
+    color:black;
+    opacity: 1;
+    text-decoration: none;
+    
+   }
