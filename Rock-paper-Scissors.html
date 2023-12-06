@@ -3,28 +3,31 @@
   <head>
     <title>ROCK PAPER SCISSORS CSS1</title>
 <link rel="stylesheet"
-href="C:\Users\Syedh\OneDrive\Desktop\Project Games\Gamesproject\Gamespage\Numbergusser\Rock-paper-Scissors.css">
+href="Rock-paper-Scissors.css">
   </head>
   <body>
-   <p class="title"
-   >ROCK PAPER SCISSORS</p>
+    <div class= "container">
+      <div class="title-header" >
+       <h1> ROCK PAPER SCISSORS</h1>
+      </div>
+   
     <button
       onclick="
     playGame('ROCK');  
     "
-    class="move-button"><img src="Image2023-11-23.jpeg" class="move-icon"></button>
+    class="move-button"><img src="ROCK.png" class="move-icon"></button>
     <button 
       onclick="
         playGame('PAPER');
           "
-          class="move-button"><img src="Image 20231123.jpeg" class="move-icon">
+          class="move-button"><img src="PAPER.png" class="move-icon">
           
         </button>
       <button 
       onclick="
-playGame('SCISSORS');  
+    playGame('SCISSORS');  
       "
-      class="move-button"> <img src="Image 2023-11-23.jpeg" class="move-icon"></button> 
+      class="move-button"> <img src="SCISSORS.png" class="move-icon"></button> 
 
       <p class="js-result  result"></p>
       <p class="js-moves"></p>
@@ -42,18 +45,52 @@ playGame('SCISSORS');
     localStorage.removeItem('score');
 
     "class="reset-score">Reset Score</button>
+</div>
 
-<button class="title1"> INSTRUCTION 
   <div class="instruction-container">
     <div class="header">Instructions</div>
     <div class="description">
-      This is Rockpaperscissors game and  following are the Instructions to play the game.
-      if 
+      This is Rockpaperscissors game and  following are the Instructions to play the game.<br>
+     The Basic Rules of RPS :<br>
+     Players deliver hand signals representing rock, paper, or scissors,
+     with the outcome determined by these three rules:<br>
+
+       Rock wins against scissors.<br>
+       The rock will beat scissors every time but will be beaten by paper.<br>
+       Scissors win against paper.<br>
+       Scissors are thrown in the same way as rock.<br>
+       Paper wins against rock.  <br>
+       Paper will beat rock but will be beaten by scissors in no time. 
     </div>
   </div>
-  </button>
-  
-  
+  <div class="side-bar">
+      
+
+    <div class="side-barcontent">
+      <div class="home">
+        <img class="home-icon" src="https://static.thenounproject.com/png/3574480-200.png">
+       <a href="MAINPAGE.html"> Home</a> 
+      </div>
+
+    </div>
+    <div class="side-barcontent">
+      <div class="home">
+
+        <img class="login-icon"
+          src="https://icons.veryicon.com/png/o/miscellaneous/esgcc-basic-icon-library/1-login.png">
+          <a href="loginform.html">Login</a>
+      </div>
+    </div>
+    <div class="side-barcontent">
+      <div class="home">
+        <img class= "contact-icon"
+          src="https://icons-for-free.com/iconfiles/png/512/contact+us+contacts+phone+support+telephone+icon-1320166528627385734.png">
+        <a href="inputform.html">Contact</a>
+      </div>
+
+    </div>
+   
+ </div>
 
         <script src="Rock-paper-Scissors.js"></script>
   </body>
