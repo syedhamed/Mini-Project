@@ -25,11 +25,15 @@ body {
 
 /* Styling for the title of the game */
 h1 {
-    color: #8b4513; /* SaddleBrown */
+    color: red; /* red */
     font-size: 4em; /* font size  */
     font-family: 'Georgia', serif; /* font family */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* text shadow*/
-    letter-spacing: 2px; /* Increase letter spacing for style */
+    text-shadow: 
+        2px 2px 0 black,
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black;
+    letter-spacing: 2px; /*letter spacing for style */
     margin-bottom: 20px;
 }
 
@@ -50,7 +54,7 @@ h1 {
     align-items: center;
     justify-content: center;
     font-size: 100px; /* font size */
-    border: 5px solid #8b4513; /* Thicker border - color */
+    border: 5px solid red; /* Thicker border - color */
     cursor: pointer;
     background-color: #deb887; /* BurlyWood - color*/
     color: #fff; /* White */
@@ -65,8 +69,9 @@ h1 {
 /* Styling for the game status display */
 .status {
     margin-top: 10px;
+    font-size: xx-large;
     font-weight: bold;
-    color: #8b4513; /* SaddleBrown - color*/
+    color: #3c00ff; 
 }
 
 /* Styling for the reset button */
@@ -127,6 +132,7 @@ h1 {
     font-size: x-large;
 }
 
+
 /* Styling for the close button in the modal */
 .close {
     color: #0a0a0a;
@@ -142,4 +148,70 @@ h1 {
     cursor: pointer;
 }
 
+/* Styling for the navigation bar */
+.header-button{
+    font-size: 25px;
+    color: #8b4513;
+    background-color:transparent;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+  }
+  .header-bar a{
+    margin-bottom: 20px;
+    margin-top: -2px;
+    color: #8b4513;
+  }
 
+  .side-bar{
+    position: absolute;
+  bottom: 100px;
+    left:10px;
+    height: 400px;
+    width: 100px;
+   padding: 50px; 
+  
+  }
+  .side-barcontent{
+    display:flex;
+    flex-direction: column;
+   width: 100px;
+   height: 150px;
+   justify-content: space-around;
+   margin-left: -25px;
+   z-index: 1;
+  }
+  .home{
+   padding: 5px;
+   justify-content: center;
+   text-align: center;
+   margin-right: 2px;
+   font-size: 20px;
+   background-color:red;
+   border-radius: 4px;
+   width: 50px;
+   height: 50px;
+   opacity: 0.8;
+  
+  
+  }
+  .home-icon,.login-icon ,.contact-icon{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+   margin-left: 2px;
+   border-radius: 20px;
+  }
+  
+   .home a{
+    margin-left: -7px;
+    color: red;
+    opacity: 1;
+    text-decoration: none;
+    
+   }
+  
+  
