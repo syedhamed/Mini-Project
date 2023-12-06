@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let playerB = ""; // Player B's symbol
     let board = ["", "", "", "", "", "", "", "", ""]; // Game board
 
+    let playerAWins = 0; // Counter for Player A wins
+    let playerBWins = 0; // Counter for Player B wins
+
     //winPatterns is an array of arrays. Each inner array contains three 
     //indices corresponding to the positions on the game board.
     const winPatterns = [
@@ -69,6 +72,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 status.textContent = "It's a tie!";
             } else {
                 status.textContent = `${currentPlayer === playerA ? "Player A (" + playerA + ")" : "Player B (" + playerB + ")"} wins!`;
+
+                // Update the winning score and display
+                if (currentPlayer === playerA) {
+                    playerAWins++;
+                    document.getElementById("playerAWins").textContent = playerAWins;
+                } else {
+                    playerBWins++;
+                    document.getElementById("playerBWins").textContent = playerBWins;
+                }
 
                 // Highlight the winning cells by adding a class
                 const winningPattern = winPatterns.find(pattern => board[pattern[0]] === board[pattern[1]] && board[pattern[1]] === board[pattern[2]]);
