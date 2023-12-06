@@ -214,4 +214,20 @@ h1 {
     
    }
   
-  
+/* Styling for the winning score display */
+.score {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.score span {
+    font-weight: bold;
+    color: #3c00ff; 
+}
