@@ -1,0 +1,233 @@
+/* Global styling for the entire page */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://s3.amazonaws.com/mindgames.ca/wp-content/uploads/2023/02/72628-1.jpg') center/cover;
+    background-attachment: fixed; /* Fixed background scrolling effect */
+}
+
+/* Styling for the main container */
+.container {
+    text-align: center;
+}
+
+/* Styling for the game wrapper */
+.wrapper {
+    background-color: #d2b48c; /* SaddleBrown */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the title of the game */
+h1 {
+    color: red; /* red */
+    font-size: 4em; /* font size  */
+    font-family: 'Georgia', serif; /* font family */
+    text-shadow: 
+        2px 2px 0 black,
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black;
+    letter-spacing: 2px; /*letter spacing for style */
+    margin-bottom: 20px;
+}
+
+
+/* Styling for the game board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /*  column size */
+    grid-gap: 20px; /*  grid gap  */
+    margin: 20px 0;
+}
+
+/* Styling for individual cells in the game board */
+.cell {
+    width: 100px; /* width */
+    height: 100px; /*  height  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px; /* font size */
+    border: 5px solid red; /* Thicker border - color */
+    cursor: pointer;
+    background-color: #deb887; /* BurlyWood - color*/
+    color: #fff; /* White */
+    text-shadow: 2px 2px 2px #8b4513; /* Add a white shadow for thickness */
+}
+
+/* Hover effect for cells */
+.cell:hover {
+    background-color: #d2b48c; /* Tan - color */
+}
+
+/* Styling for the game status display */
+.status {
+    margin-top: 10px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #3c00ff; 
+}
+
+/* Styling for the reset button */
+.reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4a98f7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the reset button */
+.reset:hover {
+    background-color: #3569b5;
+}
+
+/* Updated styles for winning cells */
+.winning-cell {
+    border: 5px solid #3c00ff; /* Increase border size */
+    background-color: #ffd700; /* Gold background color */
+}
+
+/* Hover effect for the instruction button */
+.instruction-btn:hover {
+    background-color: #b57135;
+}
+
+/* Styling for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Styling for the modal content */
+.modal-content {
+    background-color: #b29595;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #120a0a;
+    width: 60%;
+    text-align: left;
+}
+
+/* Styling for the heading */
+.modal-content p:first-of-type {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+
+/* Styling for the close button in the modal */
+.close {
+    color: #0a0a0a;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styling for the navigation bar */
+.header-button{
+    font-size: 25px;
+    color: #8b4513;
+    background-color:transparent;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+  }
+  .header-bar a{
+    margin-bottom: 20px;
+    margin-top: -2px;
+    color: #8b4513;
+  }
+
+  .side-bar{
+    position: absolute;
+    bottom: 100px;
+    left:10px;
+    height: 400px;
+    width: 100px;
+   padding: 50px; 
+  
+  }
+  .side-barcontent{
+   display:flex;
+   flex-direction: column;
+   width: 100px;
+   height: 150px;
+   justify-content: space-around;
+   margin-left: -25px;
+   z-index: 1;
+  }
+  .home{
+   padding: 5px;
+   justify-content: center;
+   text-align: center;
+   margin-right: 2px;
+   font-size: 20px;
+   background-color:red;
+   border-radius: 4px;
+   width: 50px;
+   height: 50px;
+   opacity: 0.8;
+  
+  
+  }
+  .home-icon,.login-icon ,.contact-icon{
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+   margin-left: 2px;
+   border-radius: 20px;
+  }
+  
+   .home a{
+    margin-left: -7px;
+    color: red;
+    opacity: 1;
+    text-decoration: none;
+    
+   }
+  
+/* Styling for the winning score display */
+.score {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.score span {
+    font-weight: bold;
+    color: #3c00ff; 
+}
