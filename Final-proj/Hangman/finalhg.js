@@ -1,3 +1,14 @@
+var instructionsContainer = document.getElementById('instructions-container');
+var instructionsButton = document.getElementById('instructions-button');
+
+instructionsButton.addEventListener('click', function() {
+  instructionsContainer.style.display = 'block';
+});
+
+function closeInstructions() {
+  instructionsContainer.style.display = 'none';
+}
+
 const words = ["hangman", "javascript", "developer", "programming", "web"];
 
 let chosenWord = "";
