@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="finalhg.css">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <div class="centered-heading">
+        <h1>THE HANGMAN GAME</h1>
+      </div>
+    
+    <div id="hangman-container">
+        <div id="word-display"></div>
+        <div id="guesses">Incorrect guesses: <span id="incorrect-guesses"></span></div>
+        <div id="hangman-image"></div>
+        <input type="text" id="guess-input" maxlength="1">
+        <button onclick="makeGuess()">Guess</button>
+        <button onclick="resetGame()">New Game</button>
+        <button id="instructions-button">Instructions</button>
+
+        <!-- Instructions Container -->
+<div id="instructions-container">
+    <h1>Hangman Game Instructions</h1>
+
+   <div>
+    <h2>Objective:</h2>
+    <p>Guess the hidden word by suggesting letters.</p>
+</div> 
+
+  <section>
+    <h2>How to Play:</h2>
+    <ul>
+       Guess letters using the keyboard.
+Win by guessing the word, lose if the hangman is complete.
+    </ul>
+  </section>
+
+  <section>
+    <h2>Tips:</h2>
+    <ul>
+    Every word contains vowels
+    </ul>
+  </section>
+
+  <section>
+    <h2>Restart:</h2>
+    <p>Click "New Game" for a fresh start.</p>
+  </section>
+
+  <p>Have fun playing Hangman!</p>
+    <button onclick="closeInstructions()">Close</button>
+</div>
+     </div>
+    
+
+    <div class="side-bar">
+      
+
+        <div class="side-barcontent">
+          <div class="home">
+            <img class="home-icon" src="https://static.thenounproject.com/png/3574480-200.png">
+           <a href="C:\Users\Areej\Mini-Project\Mini-Project\Mainpage.html"> Home</a>
+          </div>
+  
+        </div>
+        <div class="side-barcontent">
+          <div class="home">
+  
+            <img class="login-icon"
+              src="https://icons.veryicon.com/png/o/miscellaneous/esgcc-basic-icon-library/1-login.png"> <a
+              href="C:\Users\Areej\Mini-Project\Mini-Project\loginform.html" >Login</a>
+          </div>
+        </div>
+        <div class="side-barcontent">
+          <div class="home">
+            <img class= "contact-icon"
+              src="https://icons-for-free.com/iconfiles/png/512/contact+us+contacts+phone+support+telephone+icon-1320166528627385734.png">
+            <a href="C:\Users\Areej\Mini-Project\Mini-Project\inputform.html" >Contact</a>
+          </div>
+    <script src="finalhg.js"></script>
+</body>
+</html>
