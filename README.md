@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Welcome to Mini-Games Zone, a captivating collection of four classic mini-variety games—Rock Paper Scissors, Hangman, Tic Tac Toe, and Blackjack. This collaborative project is the outcome of a team of four students from the Coding in Colors Course. Each game is meticulously designed using the technologies and tools acquired during the course, representing the initial steps of the team's exciting journey into the world of software development.
+Welcome to Mini-Games Zone, a captivating collection of four classic mini-variety games—Rock Paper Scissors, Number Guesser, Hangman, and Tic Tac Toe. This collaborative project is the outcome of a team of four students from the Coding in Colors Course. Each game is meticulously designed using the technologies and tools acquired during the course, representing the initial steps of the team's exciting journey into the world of software development.
 
 ## Contributors
 
