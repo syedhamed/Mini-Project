@@ -13,23 +13,19 @@ Welcome to Mini-Games Zone, a captivating collection of four classic mini-variet
 
 ## Games
 
-### Game Suite
-
-Welcome to the Game Suite, a collection of classic games for your enjoyment!
-
-#### Rock, Paper, Scissors Game was done by Syed Hamedullah Hussaini
+### Rock, Paper, Scissors Game was done by Syed Hamedullah Hussaini
 
 Experience the thrill of a challenge against two players. Who will emerge victorious—player? Navigate the classic dynamics where rock beats scissors, scissors defeat paper, and paper covers rock. Make your strategic choice and claim victory!
 
-#### Number Guesser Game was done by Hiba Fatima
+### Number Guesser Game was done by Hiba Fatima
 
 Put your guessing skills to the test in this number-guessing game. The computer will randomly select a number, and it's up to you to guess it correctly. Receive hints about whether your guess is too high or too low and refine your strategy to claim victory!
 
-#### Hangman Game was done by Samrah Atif
+### Hangman Game was done by Samrah Atif
 
 Immerse yourself in this word puzzle game as you strive to save the stick man from hanging. Test your vocabulary and guessing skills in this classic game of deduction.
 
-#### Tic Tac Toe was done by Emimal Jabason
+### Tic Tac Toe was done by Emimal Jabason
 
 It's all about strategy! Face off against two players and employ your tactical prowess to achieve victory in this timeless game.
 
