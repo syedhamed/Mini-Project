@@ -13,11 +13,11 @@ Welcome to Mini-Games Zone, a captivating collection of four classic mini-variet
 
 ## Games
 
-### Rock, Paper, Scissors Game was done by Syed Hamedullah Hussaini
+### Rock, Paper, Scissors Game was done by Hiba Fatima
 
 Experience the thrill of a challenge against two players. Who will emerge victorious—player? Navigate the classic dynamics where rock beats scissors, scissors defeat paper, and paper covers rock. Make your strategic choice and claim victory!
 
-### Number Guesser Game was done by Hiba Fatima
+### Number Guesser Game was done by Syed Hamedullah Hussaini
 
 Put your guessing skills to the test in this number-guessing game. The computer will randomly select a number, and it's up to you to guess it correctly. Receive hints about whether your guess is too high or too low and refine your strategy to claim victory!
 
